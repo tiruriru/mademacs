@@ -8,7 +8,7 @@
 
 (require 'linum)
 
-;;; Custom variables:
+;; Custom variables.
 
 (defcustom linum-disabled-modes-list
   '(eshell-mode wl-summary-mode compilation-mode org-mode text-mode dired-mode)
@@ -23,7 +23,7 @@
   :type 'boolean
   :group 'linum)
 
-;;; Implementation:
+;; Helper functions.
 
 (defun linum-on ()
   "When linum is running globally, disable line number in modes
@@ -34,9 +34,8 @@ Also turns off numbering in starred modes like *scratch*"
               (string-match "*" (buffer-name)))
     (linum-mode 1)))
 
-;;; Customizations:
+;; Swap linum formatter.
 
-;; Swap linum formatter...
 (setq linum-format
       (lambda (line)
         (propertize

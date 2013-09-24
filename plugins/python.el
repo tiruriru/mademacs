@@ -3,4 +3,5 @@
 ;;; Code:
 
 ;; Omit files.
+
 (setq omit (concat omit "\\|\\.py\\(c\\|o\\)$"))

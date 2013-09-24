@@ -7,4 +7,5 @@
 ;;; Code:
 
 ;; Editing hooks.
+
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

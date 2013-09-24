@@ -3,6 +3,7 @@
 ;;; Code:
 
 ;; Omit those files in dired.
+
 (setq omit (concat omit "^\\.?\\#"))                                       ; emacs
 (setq omit (concat omit "\\|^~"))                                          ; vim
 (setq omit (concat omit "\\|^\\.DS_Store$"))                               ; mac
@@ -16,7 +17,9 @@
 (setq omit (concat omit "\\|\\.tmp$"))                                     ; temporal
 
 ;; Custom file modes.
+
 (add-to-list 'auto-mode-alist (cons "\\.emacs$" #'emacs-lisp-mode))
 
 ;; Custom shortcuts.
+
 (global-set-key (kbd "C-c k") 'kill-whole-line)
