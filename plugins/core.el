@@ -17,3 +17,6 @@
 
 ;; Custom file modes.
 (add-to-list 'auto-mode-alist (cons "\\.emacs$" #'emacs-lisp-mode))
+
+;; Custom shortcuts.
+(global-set-key (kbd "C-c k") 'kill-whole-line)

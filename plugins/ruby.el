@@ -12,6 +12,10 @@
 (add-to-list 'auto-mode-alist (cons "\\.ru$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "\\.rake$" #'ruby-mode))
 (add-to-list 'auto-mode-alist (cons "\\.gemfile$" #'ruby-mode))
+(add-to-list 'auto-mode-alist (cons "\\.erb$" #'html-mode))
+(add-to-list 'auto-mode-alist (cons "\\html.erb$" #'html-mode))
+(add-to-list 'auto-mode-alist (cons "\\js.erb$" #'js-mode))
+(add-to-list 'auto-mode-alist (cons "\\xml.erb$" #'xml-mode))
 
 ;; Friendlier ruby indentation.
 (setq ruby-deep-indent-paren nil)

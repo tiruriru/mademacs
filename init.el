@@ -15,11 +15,11 @@
 (add-to-list 'load-path (concat root-dir "packages/") t)
 
 ;; Global defaults.
-(setq-default plugins (file-expand-wildcards (concat root-dir "plugins/*.el")))
 
 ;; Helper functions.
 (defun load-plugins ()
-  (let ((plugins-count 0))
+  (let ((plugins-count 0)
+        (plugins (file-expand-wildcards (concat root-dir "plugins/*.el"))))
     (dolist (plugin plugins)
       (load-file plugin)
       (setq plugins-count (1+ plugins-count)))
