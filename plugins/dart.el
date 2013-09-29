@@ -3,3 +3,7 @@
 ;;; Code:
 
 (require 'dart-mode)
+
+;; File modes.
+
+(add-to-list 'auto-mode-alist (cons "\\.dart$" #'dart-mode))
