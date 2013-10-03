@@ -1,4 +1,4 @@
-;;; plugins/core.el --- Default stuff.
+;;; plugins/_.el --- Default stuff.
 
 ;;; Code:
 
